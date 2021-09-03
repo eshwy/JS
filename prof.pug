@@ -1,0 +1,15 @@
+html 
+    head 
+        title Prof List 
+    body 
+        h1(style="color:red;")Lis
+        table (border="2" cellpadding="10")
+            thead 
+                th FULLNAME 
+                th Email 
+                th PHONE 
+            each val in all  employess 
+                tr 
+                    td #{val.prof_name}
+                    td #{val.email}
+                    td #{val.prof_num}
